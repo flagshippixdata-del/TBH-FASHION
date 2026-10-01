@@ -3,73 +3,276 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="TBH Fashion — Premium Pakistani ladies 3-piece dresses in Bangladesh.">
+<meta name="description" content="TBH Fashion brings elegant Pakistani ladies' 3-piece dresses to Bangladesh.">
+<meta name="theme-color" content="#faf7f2">
 <title>TBH Fashion | Premium Pakistani Dresses</title>
 <style>
-:root{--bg:#faf8f4;--ink:#171513;--muted:#716b64;--gold:#b58a45;--card:#fff;--line:#e8e0d5}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:10;background:rgba(250,248,244,.96);border-bottom:1px solid var(--line);padding:14px 6%}
-.navin{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{font-family:Georgia,serif;font-size:25px;letter-spacing:2px}.logo span{color:var(--gold)}
-.links{display:flex;gap:22px;font-size:14px}.links a:hover{color:var(--gold)}
-.hero{min-height:72vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 6%;background:linear-gradient(135deg,#f4eee5,#fff 55%,#eee5d8)}
-.hero h1{font-family:Georgia,serif;font-size:clamp(45px,8vw,88px);font-weight:400;margin:0 0 12px;letter-spacing:3px}
-.hero p{max-width:620px;margin:0 auto 28px;color:var(--muted);font-size:17px}
-.btn{display:inline-block;background:var(--ink);color:#fff;padding:13px 22px;margin:5px;border-radius:3px;font-size:14px}.btn.gold{background:var(--gold)}
-section{padding:70px 6%}.wrap{max-width:1150px;margin:auto}.heading{text-align:center;margin-bottom:38px}.heading h2{font-family:Georgia,serif;font-size:38px;font-weight:400;margin:0}.heading p{color:var(--muted)}
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:var(--card);border:1px solid var(--line);overflow:hidden}.photo{height:clamp(340px,32vw,420px);padding:12px;background:#f7f4ef;display:flex;align-items:center;justify-content:center;overflow:hidden}.photo img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
-.cardbody{padding:20px}.card h3{margin:0 0 6px;font-family:Georgia,serif;font-weight:400}.price{font-weight:bold;margin:8px 0 15px}.small{color:var(--muted);font-size:13px}
-.about{background:#171513;color:#fff}.about .heading p{color:#c9c1b8}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.about h3{font-family:Georgia,serif;font-size:32px;font-weight:400}
-.info{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.info div{padding:25px;background:#fff;border:1px solid var(--line);text-align:center}.info h3{font-family:Georgia,serif;font-weight:400}
-.contact{text-align:center}.footer{background:#111;color:#aaa;text-align:center;padding:28px 6%;font-size:13px}.footer strong{color:#fff}
-@media(max-width:750px){.links{display:none}.products{grid-template-columns:1fr}.aboutgrid,.info{grid-template-columns:1fr}.photo{height:380px}}
+:root{
+  --ivory:#faf7f2;
+  --paper:#ffffff;
+  --ink:#2a201e;
+  --muted:#776d68;
+  --gold:#9b6a3a;
+  --gold-dark:#764820;
+  --rose:#f2e7df;
+  --line:#e8ddd4;
+  --shadow:0 16px 40px rgba(61,42,31,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+a:focus-visible{outline:3px solid #d6a56f;outline-offset:3px}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(250,247,242,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(232,221,212,.85)}
+.nav-shell{width:min(1150px,88%);margin:auto;padding:14px 0;display:grid;gap:12px}
+.brand{font-family:Georgia,"Times New Roman",serif;font-size:1.3rem;font-weight:700;letter-spacing:.14em;line-height:1}
+.brand span{color:var(--gold)}
+.nav-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{padding:7px 10px;white-space:nowrap;color:var(--muted);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.nav-links a:hover{color:var(--gold-dark)}
+.eyebrow{margin:0 0 13px;color:var(--gold-dark);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.hero{position:relative;overflow:hidden;padding:78px 0 64px;background:linear-gradient(135deg,#f3e6db 0%,#fbf8f3 56%,#ede1d6 100%)}
+.hero::before,.hero::after{position:absolute;content:"";border:1px solid rgba(155,106,58,.18);border-radius:50%;pointer-events:none}
+.hero::before{width:330px;height:330px;right:-175px;top:-125px}
+.hero::after{width:215px;height:215px;left:-140px;bottom:-85px}
+.container{position:relative;width:min(1150px,88%);margin:auto}
+.hero-grid{display:grid;gap:36px;align-items:center}
+.hero-copy{max-width:665px}
+.hero h1{max-width:700px;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.85rem,12vw,5.8rem);font-weight:400;line-height:.98;letter-spacing:-.045em}
+.hero-text{max-width:570px;margin:22px 0 27px;color:var(--muted);font-size:1rem}
+.button-row{display:flex;flex-wrap:wrap;gap:10px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 18px;border:1px solid transparent;border-radius:2px;font-size:.83rem;font-weight:700;letter-spacing:.04em;text-align:center;transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease}
+.button:hover{transform:translateY(-2px)}
+.button-primary{background:var(--ink);color:#fff}
+.button-primary:hover{background:var(--gold-dark)}
+.button-outline{border-color:var(--ink);color:var(--ink)}
+.button-outline:hover{background:rgba(255,255,255,.65)}
+.hero-note{padding:26px;background:rgba(255,255,255,.66);border:1px solid rgba(255,255,255,.9);box-shadow:var(--shadow)}
+.hero-note p{margin:0;color:var(--muted);font-size:.93rem}
+.hero-note strong{display:block;margin-bottom:5px;font-family:Georgia,"Times New Roman",serif;font-size:1.48rem;font-weight:400}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}
+.hero-stats div{padding:10px 8px;border-top:1px solid var(--line)}
+.hero-stats strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:1.1rem;font-weight:400}
+.hero-stats span{display:block;color:var(--muted);font-size:.69rem;line-height:1.3}
+section{padding:66px 0}
+.section-heading{max-width:650px;margin:0 auto 32px;text-align:center}
+.section-heading h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.1rem,7vw,3.3rem);font-weight:400;letter-spacing:-.03em;line-height:1.08}
+.section-heading p{margin:12px 0 0;color:var(--muted)}
+.products{display:grid;gap:18px}
+.product-card{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);box-shadow:0 5px 18px rgba(53,36,26,.03);transition:box-shadow .25s ease,transform .25s ease}
+.product-card:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+.product-photo{position:relative;height:380px;padding:16px;background:#f6f2ed;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.product-photo img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
+.product-tag{position:absolute;top:14px;left:14px;padding:5px 8px;background:rgba(255,255,255,.92);color:var(--gold-dark);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.product-body{display:flex;flex:1;flex-direction:column;padding:22px}
+.product-kicker{margin:0 0 4px;color:var(--gold);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.product-body h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:1.42rem;font-weight:400;line-height:1.18}
+.price{margin:12px 0 7px;font-size:1.08rem;font-weight:700}
+.product-details{margin:0 0 20px;color:var(--muted);font-size:.85rem}
+.product-body .button{width:100%;margin-top:auto}
+.about{background:var(--ink);color:#fff}
+.about-grid{display:grid;gap:30px;align-items:center}
+.about .eyebrow{color:#e2bb85}
+.about h2{max-width:500px;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.25rem,8vw,3.9rem);font-weight:400;line-height:1.05;letter-spacing:-.035em}
+.about-copy{padding:26px;border-left:1px solid rgba(255,255,255,.24)}
+.about-copy p{margin:0 0 14px;color:#e5ded8}
+.about-copy p:last-child{margin-bottom:0}
+.info-grid{display:grid;gap:14px}
+.info-card{padding:24px;background:var(--paper);border:1px solid var(--line)}
+.info-number{display:block;margin-bottom:18px;color:var(--gold);font-family:Georgia,"Times New Roman",serif;font-size:1rem}
+.info-card h3{margin:0 0 8px;font-family:Georgia,"Times New Roman",serif;font-size:1.45rem;font-weight:400}
+.info-card p{margin:0;color:var(--muted);font-size:.92rem}
+.contact-panel{padding:38px 24px;text-align:center;background:linear-gradient(135deg,#f0e1d5,#fbf8f3);border:1px solid var(--line)}
+.contact-panel h2{max-width:670px;margin:0 auto;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,8vw,3.65rem);font-weight:400;line-height:1.08;letter-spacing:-.035em}
+.contact-panel p{max-width:570px;margin:15px auto 23px;color:var(--muted)}
+.contact-panel .button-row{justify-content:center}
+.footer{padding:35px 0;background:#201917;color:#d4cac3}
+.footer-grid{display:grid;gap:20px}
+.footer-brand{color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:1.1rem;font-weight:700;letter-spacing:.13em}
+.footer-brand span{color:#e2bb85}
+.footer p{max-width:460px;margin:7px 0 0;font-size:.82rem}
+.footer-note{color:#b9aca4;font-size:.77rem}
+@media (min-width:640px){
+  .nav-shell{display:flex;align-items:center;justify-content:space-between}
+  .nav-links{overflow:visible}
+  .hero{padding:106px 0 84px}
+  .product-photo{height:420px}
+  .info-grid{grid-template-columns:repeat(3,1fr)}
+  .contact-panel{padding:54px}
+  .footer-grid{grid-template-columns:1fr auto;align-items:end}
+}
+@media (min-width:860px){
+  .hero-grid{grid-template-columns:minmax(0,1.5fr) minmax(260px,.7fr);gap:70px}
+  .products{grid-template-columns:repeat(3,1fr);gap:22px}
+  .product-photo{height:clamp(340px,31vw,420px)}
+  .about-grid{grid-template-columns:1fr 1fr;gap:100px}
+  section{padding:92px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .button,.product-card{transition:none}
+  .button:hover,.product-card:hover{transform:none}
+}
 </style>
 </head>
 <body>
-<nav class="nav"><div class="navin">
-<a class="logo" href="#">TBH <span>FASHION</span></a>
-<div class="links"><a href="#shop">Shop</a><a href="#about">About</a><a href="#info">Delivery</a><a href="#contact">Contact</a></div>
-</div></nav>
-
-<header class="hero">
-<div>
-<div class="small" style="letter-spacing:4px;text-transform:uppercase">Premium Pakistani Collection · Bangladesh</div>
-<h1>TBH Fashion</h1>
-<p>Elegant Pakistani ladies 3-piece dresses, selected for women who love premium fabrics, beautiful details and rare designs.</p>
-<a class="btn gold" href="#shop">Explore Collection</a>
-<a class="btn" href="https://wa.me/8801XXXXXXXXX?text=Hello%20TBH%20Fashion%2C%20I%20want%20to%20see%20your%20collection." target="_blank">Order on WhatsApp</a>
-</div>
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="brand" href="#top" aria-label="TBH Fashion home">TBH <span>FASHION</span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#shopping-info">Delivery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<section id="shop"><div class="wrap">
-<div class="heading"><h2>New Collection</h2><p>Replace the sample cards below with your actual dress photos and prices.</p></div>
-<div class="products">
-<article class="card"><div class="photo"><img src="Pearl-White-6500%20(1)%20XL.webp" alt="TBH Fashion Pearl White Premium 3-Piece Dress" loading="lazy"></div><div class="cardbody"><h3>Premium 3-Piece — 01</h3><div class="price">৳ 6,500</div><div class="small">3-piece · Pakistani collection · Sizes: Add sizes</div><a class="btn" href="https://wa.me/8801XXXXXXXXX?text=I%20am%20interested%20in%20Premium%203-Piece%2001." target="_blank">Order</a></div></article>
-<article class="card"><div class="photo"><img src="Rose-Mint-6500%20(1)%20L.webp" alt="TBH Fashion Rose Mint Premium 3-Piece Dress" loading="lazy"></div><div class="cardbody"><h3>Premium 3-Piece — 02</h3><div class="price">৳ 6,500</div><div class="small">3-piece · Pakistani collection · Sizes: Add sizes</div><a class="btn" href="https://wa.me/8801XXXXXXXXX?text=I%20am%20interested%20in%20Premium%203-Piece%2002." target="_blank">Order</a></div></article>
-<article class="card"><div class="photo"><img src="Sweet-Lavender-6500%20(2)%20L%20%26%20XL.webp" alt="TBH Fashion Sweet Lavender Premium 3-Piece Dress" loading="lazy"></div><div class="cardbody"><h3>Premium 3-Piece — 03</h3><div class="price">৳ 6,500</div><div class="small">3-piece · Pakistani collection · Sizes: Add sizes</div><a class="btn" href="https://wa.me/8801XXXXXXXXX?text=I%20am%20interested%20in%20Premium%203-Piece%2003." target="_blank">Order</a></div></article>
-</div>
-</div></section>
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Premium Pakistani Collection · Bangladesh</p>
+        <h1 id="hero-title">Elegance, chosen for your everyday moments.</h1>
+        <p class="hero-text">Discover beautifully detailed Pakistani 3-piece dresses selected for women who value graceful silhouettes, premium fabrics, and designs that feel special.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="#shop">Explore Collection</a>
+          <!-- Replace 8801XXXXXXXXX with your WhatsApp number, using country code and no + sign. -->
+          <a class="button button-outline" href="https://wa.me/8801XXXXXXXXX?text=Hello%20TBH%20Fashion%2C%20I%20want%20to%20see%20your%20collection." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </div>
+      <aside class="hero-note" aria-label="Collection highlight">
+        <strong>Made to be noticed.</strong>
+        <p>Refined pieces for celebrations, visits, and the days you want to feel your best.</p>
+        <div class="hero-stats">
+          <div><strong>3-piece</strong><span>Complete sets</span></div>
+          <div><strong>৳6,500</strong><span>Current collection</span></div>
+          <div><strong>BD</strong><span>Local delivery</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
 
-<section class="about" id="about"><div class="wrap aboutgrid">
-<div><div class="small" style="color:#b58a45;letter-spacing:3px">OUR STORY</div><h3>Elegance, selected with care.</h3></div>
-<div><p>TBH Fashion brings premium Pakistani ladieswear to Bangladesh. Our collection focuses on elegant designs, beautiful detailing and carefully selected pieces.</p><p>We are starting small and growing with our customers — every order matters.</p></div>
-</div></section>
+  <section id="shop" aria-labelledby="collection-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Fresh arrivals</p>
+        <h2 id="collection-title">The new collection</h2>
+        <p>Three carefully selected designs, available in limited quantities. Message us to confirm your preferred size.</p>
+      </div>
+      <div class="products">
+        <article class="product-card">
+          <div class="product-photo">
+            <span class="product-tag">In stock</span>
+            <img src="Pearl-White-6500%20(1)%20XL.webp" alt="Pearl white Pakistani premium three-piece dress" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-kicker">Premium 3-piece</p>
+            <h3>Pearl White</h3>
+            <p class="price">৳ 6,500</p>
+            <p class="product-details">Pakistani collection · Available in XL</p>
+            <a class="button button-primary" href="https://wa.me/8801XXXXXXXXX?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Pearl%20White%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Pearl White Premium 3-Piece Dress on WhatsApp">Order on WhatsApp</a>
+          </div>
+        </article>
 
-<section id="info"><div class="wrap">
-<div class="heading"><h2>Shopping Information</h2><p>Simple, clear and customer-friendly.</p></div>
-<div class="info"><div><h3>🚚 Delivery</h3><p class="small">Add your delivery areas, charges and estimated delivery time here.</p></div>
-<div><h3>📏 Sizes</h3><p class="small">Add available sizes and measurements here.</p></div>
-<div><h3>↩ Returns</h3><p class="small">Add your exchange/return policy here.</p></div></div>
-</div></section>
+        <article class="product-card">
+          <div class="product-photo">
+            <span class="product-tag">In stock</span>
+            <img src="Rose-Mint-6500%20(1)%20L.webp" alt="Rose mint Pakistani premium three-piece dress" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-kicker">Premium 3-piece</p>
+            <h3>Rose Mint</h3>
+            <p class="price">৳ 6,500</p>
+            <p class="product-details">Pakistani collection · Available in L</p>
+            <a class="button button-primary" href="https://wa.me/8801XXXXXXXXX?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Rose%20Mint%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Rose Mint Premium 3-Piece Dress on WhatsApp">Order on WhatsApp</a>
+          </div>
+        </article>
 
-<section class="contact" id="contact"><div class="wrap">
-<div class="heading"><h2>Ready to Order?</h2><p>Message TBH Fashion for availability, sizes and delivery details.</p></div>
-<a class="btn gold" href="https://wa.me/8801XXXXXXXXX?text=Hello%20TBH%20Fashion%2C%20I%20want%20to%20place%20an%20order." target="_blank">WhatsApp TBH Fashion</a>
-<a class="btn" href="https://www.facebook.com/" target="_blank">Facebook</a>
-<a class="btn" href="https://www.instagram.com/" target="_blank">Instagram</a>
-</div></section>
+        <article class="product-card">
+          <div class="product-photo">
+            <span class="product-tag">In stock</span>
+            <img src="Sweet-Lavender-6500%20(2)%20L%20%26%20XL.webp" alt="Sweet lavender Pakistani premium three-piece dress" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-kicker">Premium 3-piece</p>
+            <h3>Sweet Lavender</h3>
+            <p class="price">৳ 6,500</p>
+            <p class="product-details">Pakistani collection · Available in L and XL</p>
+            <a class="button button-primary" href="https://wa.me/8801XXXXXXXXX?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Sweet%20Lavender%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Sweet Lavender Premium 3-Piece Dress on WhatsApp">Order on WhatsApp</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<footer class="footer">© 2026 <strong>TBH Fashion</strong> · Premium Pakistani Ladieswear in Bangladesh</footer>
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="container about-grid">
+      <div>
+        <p class="eyebrow">Our story</p>
+        <h2 id="about-title">Style that feels considered, never complicated.</h2>
+      </div>
+      <div class="about-copy">
+        <p>TBH Fashion brings premium Pakistani ladieswear to Bangladesh with a focus on thoughtful details, elegant colour palettes, and pieces you will reach for again.</p>
+        <p>We are growing with our customers, one carefully chosen dress at a time. Every order matters to us.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="shopping-info" aria-labelledby="info-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Shop with confidence</p>
+        <h2 id="info-title">Simple shopping information</h2>
+        <p>Update these details with your delivery areas, measurements, and policy before launch.</p>
+      </div>
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="info-number">01</span>
+          <h3>Delivery</h3>
+          <p>Add your delivery areas, delivery charges, and expected delivery times here.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-number">02</span>
+          <h3>Sizes</h3>
+          <p>Confirm available sizes and add detailed measurements when customers message you.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-number">03</span>
+          <h3>Exchange &amp; returns</h3>
+          <p>Add your exchange or return policy here, including any condition and timeframe.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-panel">
+        <p class="eyebrow">Let’s find your perfect piece</p>
+        <h2 id="contact-title">Ready to order?</h2>
+        <p>Message TBH Fashion for availability, size guidance, and delivery details. We are happy to help.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="https://wa.me/8801XXXXXXXXX?text=Hello%20TBH%20Fashion%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener">WhatsApp TBH Fashion</a>
+          <!-- Replace the social links below with your official account URLs. -->
+          <a class="button button-outline" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+          <a class="button button-outline" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">TBH <span>FASHION</span></div>
+      <p>Premium Pakistani ladieswear, selected with care for Bangladesh.</p>
+    </div>
+    <div class="footer-note">© 2026 TBH Fashion · All rights reserved.</div>
+  </div>
+</footer>
 </body>
 </html>
