@@ -3,430 +3,279 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="TBH Fashion brings elegant Pakistani ladies' 3-piece dresses to Bangladesh.">
-<meta name="theme-color" content="#faf7f2">
-<title>TBH Fashion | Premium Pakistani Dresses</title>
+<meta name="description" content="TBH Fashion — premium Pakistani ladies' 3-piece dresses in Bangladesh.">
+<meta name="theme-color" content="#0d0c0b">
+<title>TBH Fashion | Timeless Elegance</title>
 <style>
-:root{
-  --ivory:#faf7f2;
-  --paper:#ffffff;
-  --ink:#2a201e;
-  --muted:#776d68;
-  --gold:#9b6a3a;
-  --gold-dark:#764820;
-  --rose:#f2e7df;
-  --line:#e8ddd4;
-  --shadow:0 16px 40px rgba(61,42,31,.08);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--ivory);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}
-img{max-width:100%}
-a:focus-visible{outline:3px solid #d6a56f;outline-offset:3px}
-.site-header{position:sticky;top:0;z-index:20;background:rgba(250,247,242,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(232,221,212,.85)}
-.nav-shell{width:min(1150px,88%);margin:auto;padding:14px 0;display:grid;gap:12px}
-.brand{display:inline-flex;align-items:center;gap:10px;font-family:Georgia,"Times New Roman",serif;font-size:1.05rem;font-weight:700;letter-spacing:.14em;line-height:1}
-.brand-mark{width:48px;height:48px;object-fit:contain;background:#080706;border:1px solid rgba(155,106,58,.42)}
-.brand b{color:var(--gold);font-weight:inherit}
-.nav-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
-.nav-links::-webkit-scrollbar{display:none}
-.nav-links a{padding:7px 10px;white-space:nowrap;color:var(--muted);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-.nav-links a:hover{color:var(--gold-dark)}
-.eyebrow{margin:0 0 13px;color:var(--gold-dark);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
-.hero{position:relative;overflow:hidden;padding:78px 0 64px;background:linear-gradient(135deg,#f3e6db 0%,#fbf8f3 56%,#ede1d6 100%)}
-.hero::before,.hero::after{position:absolute;content:"";border:1px solid rgba(155,106,58,.18);border-radius:50%;pointer-events:none}
-.hero::before{width:330px;height:330px;right:-175px;top:-125px}
-.hero::after{width:215px;height:215px;left:-140px;bottom:-85px}
-.container{position:relative;width:min(1150px,88%);margin:auto}
-.hero-grid{display:grid;gap:36px;align-items:center}
-.hero-copy{max-width:665px}
-.hero h1{max-width:700px;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.85rem,12vw,5.8rem);font-weight:400;line-height:.98;letter-spacing:-.045em}
-.hero-text{max-width:570px;margin:22px 0 27px;color:var(--muted);font-size:1rem}
-.button-row{display:flex;flex-wrap:wrap;gap:10px}
-.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 18px;border:1px solid transparent;border-radius:2px;font-size:.83rem;font-weight:700;letter-spacing:.04em;text-align:center;transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease}
-.button:hover{transform:translateY(-2px)}
-.button-primary{background:var(--ink);color:#fff}
-.button-primary:hover{background:var(--gold-dark)}
-.button-outline{border-color:var(--ink);color:var(--ink)}
-.button-outline:hover{background:rgba(255,255,255,.65)}
-section{padding:66px 0}
-.section-heading{max-width:650px;margin:0 auto 32px;text-align:center}
-.section-heading h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.1rem,7vw,3.3rem);font-weight:400;letter-spacing:-.03em;line-height:1.08}
-.section-heading p{margin:12px 0 0;color:var(--muted)}
-.products{display:grid;gap:18px}
-.product-card{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);box-shadow:0 5px 18px rgba(53,36,26,.03);transition:box-shadow .25s ease,transform .25s ease}
-.product-card:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
-.product-photo{position:relative;height:380px;padding:16px;background:#f6f2ed;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.product-photo img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
-.product-tag{position:absolute;top:14px;left:14px;padding:5px 8px;background:rgba(255,255,255,.92);color:var(--gold-dark);font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
-.product-body{display:flex;flex:1;flex-direction:column;padding:22px}
-.product-kicker{margin:0 0 4px;color:var(--gold);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-.product-body h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:1.42rem;font-weight:400;line-height:1.18}
-.price{margin:12px 0 7px;font-size:1.08rem;font-weight:700}
-.product-details{margin:0 0 20px;color:var(--muted);font-size:.85rem}
-.product-body .button{width:100%;margin-top:auto}
-.about{background:var(--ink);color:#fff}
-.about-grid{display:grid;gap:30px;align-items:center}
-.about .eyebrow{color:#e2bb85}
-.about h2{max-width:500px;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.25rem,8vw,3.9rem);font-weight:400;line-height:1.05;letter-spacing:-.035em}
-.about-copy{padding:26px;border-left:1px solid rgba(255,255,255,.24)}
-.about-copy p{margin:0 0 14px;color:#e5ded8}
-.about-copy p:last-child{margin-bottom:0}
-.info-grid{display:grid;gap:14px}
-.info-card{padding:24px;background:var(--paper);border:1px solid var(--line)}
-.info-number{display:block;margin-bottom:18px;color:var(--gold);font-family:Georgia,"Times New Roman",serif;font-size:1rem}
-.info-card h3{margin:0 0 8px;font-family:Georgia,"Times New Roman",serif;font-size:1.45rem;font-weight:400}
-.info-card p{margin:0;color:var(--muted);font-size:.92rem}
-.contact-panel{padding:38px 24px;text-align:center;background:linear-gradient(135deg,#f0e1d5,#fbf8f3);border:1px solid var(--line)}
-.contact-panel h2{max-width:670px;margin:0 auto;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,8vw,3.65rem);font-weight:400;line-height:1.08;letter-spacing:-.035em}
-.contact-panel p{max-width:570px;margin:15px auto 23px;color:var(--muted)}
-.contact-panel .button-row{justify-content:center}
-.footer{padding:35px 0;background:#201917;color:#d4cac3}
-.footer-grid{display:grid;gap:20px}
-.footer-brand{display:flex;align-items:center;gap:12px;color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:1.05rem;font-weight:700;letter-spacing:.13em}
-.footer-logo{width:68px;height:68px;object-fit:contain;background:#080706;border:1px solid rgba(226,187,133,.42)}
-.footer-brand b{color:#e2bb85;font-weight:inherit}
-.footer p{max-width:460px;margin:7px 0 0;font-size:.82rem}
-.footer-note{color:#b9aca4;font-size:.77rem}
-@media (min-width:640px){
-  .nav-shell{display:flex;align-items:center;justify-content:space-between}
-  .nav-links{overflow:visible}
-  .hero{padding:106px 0 84px}
-  .product-photo{height:420px}
-  .info-grid{grid-template-columns:repeat(3,1fr)}
-  .contact-panel{padding:54px}
-  .footer-grid{grid-template-columns:1fr auto;align-items:end}
-}
-@media (min-width:860px){
-  .hero-grid{grid-template-columns:minmax(0,1fr)}
-  .products{grid-template-columns:repeat(3,1fr);gap:22px}
-  .product-photo{height:clamp(340px,31vw,420px)}
-  .about-grid{grid-template-columns:1fr 1fr;gap:100px}
-  section{padding:92px 0}
-}
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  .button,.product-card{transition:none}
-  .button:hover,.product-card:hover{transform:none}
-}
+:root{--black:#0d0c0b;--charcoal:#171513;--charcoal-2:#221f1c;--gold:#d7a744;--gold-light:#f4d78c;--cream:#f8f1e5;--muted:#b8aea3;--line:rgba(215,167,68,.24);--white:#fffdf8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}button{font:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--gold-light);outline-offset:3px}
+.container{width:min(1160px,88%);margin:auto}.site-header{position:sticky;top:0;z-index:20;background:rgba(13,12,11,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:10px;font-family:Georgia,serif;font-size:.9rem;font-weight:700;letter-spacing:.15em;white-space:nowrap}.brand img{width:48px;height:48px;object-fit:contain;border:1px solid var(--line);background:#000}.brand b{color:var(--gold);font-weight:inherit}.nav-links{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}.nav-links a{padding:8px 9px;color:var(--muted);font-size:.68rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;white-space:nowrap}.nav-links a:hover{color:var(--gold-light)}
+.hero{padding:80px 0 68px;overflow:hidden;background:radial-gradient(circle at 85% 8%,rgba(215,167,68,.16),transparent 25%),linear-gradient(135deg,#0d0c0b,#1e1915 58%,#0d0c0b)}.hero-grid{display:grid;gap:32px;align-items:center}.eyebrow{margin:0 0 13px;color:var(--gold);font-size:.7rem;font-weight:700;letter-spacing:.17em;text-transform:uppercase}.hero h1,.section-title,.about-copy h2,.contact-box h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.04;letter-spacing:-.035em}.hero h1{max-width:740px;margin:0;font-size:clamp(2.8rem,12vw,6.1rem)}.hero-text{max-width:620px;margin:21px 0 27px;color:var(--muted);font-size:1rem}.button-row{display:flex;flex-wrap:wrap;gap:10px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:47px;padding:12px 17px;border:1px solid transparent;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-align:center;transition:transform .2s ease,background .2s ease}.button:hover{transform:translateY(-2px)}.button-gold{background:var(--gold);color:#19120b}.button-gold:hover{background:var(--gold-light)}.button-outline{border-color:var(--gold);color:var(--gold-light)}.button-outline:hover{background:rgba(215,167,68,.1)}.hero-seal{padding:24px;background:linear-gradient(145deg,rgba(34,31,28,.9),rgba(13,12,11,.92));border:1px solid var(--line)}.hero-seal img{width:120px;height:120px;object-fit:contain;margin:0 auto 16px;border:1px solid var(--line)}.hero-seal p{margin:0;text-align:center;color:var(--muted);font-size:.9rem}.hero-seal strong{display:block;color:var(--gold-light);font-family:Georgia,serif;font-size:1.3rem;font-weight:400}
+section{padding:68px 0}.section-heading{max-width:680px;margin:0 auto 30px;text-align:center}.section-heading p:last-child{color:var(--muted);margin:12px 0 0}.section-title{margin:0;font-size:clamp(2.15rem,8vw,4rem)}.featured{background:#12100e;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.product-grid{display:grid;gap:18px}.product-card{display:flex;flex-direction:column;overflow:hidden;background:var(--charcoal);border:1px solid rgba(255,255,255,.09);transition:transform .2s ease,border-color .2s ease}.product-card:hover{transform:translateY(-4px);border-color:var(--gold)}.product-image{position:relative;height:380px;padding:14px;background:#211d19;display:flex;align-items:center;justify-content:center}.product-image img{width:100%;height:100%;object-fit:contain}.stock-badge{position:absolute;top:13px;left:13px;z-index:1;padding:5px 8px;background:var(--gold);color:#1c130a;font-size:.63rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.product-details{display:flex;flex:1;flex-direction:column;padding:20px}.product-type{margin:0 0 4px;color:var(--gold);font-size:.67rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}.product-details h3{margin:0;font-family:Georgia,serif;font-size:1.42rem;font-weight:400;line-height:1.2}.price{margin:11px 0 5px;color:var(--gold-light);font-size:1.1rem;font-weight:700}.size{margin:0 0 19px;color:var(--muted);font-size:.83rem}.size strong{color:var(--cream)}.order-link{width:100%;margin-top:auto}
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 28px}.filter-button{min-height:39px;padding:8px 13px;background:transparent;border:1px solid var(--line);color:var(--cream);cursor:pointer;font-size:.75rem;font-weight:700}.filter-button:hover,.filter-button.active{background:var(--gold);border-color:var(--gold);color:#1b130b}.product-card[hidden]{display:none}.about{background:linear-gradient(140deg,#191512,#080807)}.about-grid{display:grid;gap:25px;align-items:center}.about-logo{width:min(260px,70%);margin:auto;border:1px solid var(--line)}.about-copy h2{margin:0;font-size:clamp(2.25rem,8vw,4rem)}.about-copy p:not(.eyebrow){color:var(--muted)}.info-grid,.payment-grid,.review-grid{display:grid;gap:14px}.info-card,.payment-card,.review-card{padding:24px;background:var(--charcoal);border:1px solid rgba(255,255,255,.08)}.info-card span{display:block;margin-bottom:15px;color:var(--gold);font-family:Georgia,serif;font-size:1.1rem}.info-card h3,.payment-card h3,.review-card h3{margin:0 0 8px;font-family:Georgia,serif;font-size:1.35rem;font-weight:400}.info-card p,.payment-card p,.review-card p{margin:0;color:var(--muted);font-size:.9rem}.payments{background:#12100e}.payment-card h3{color:var(--gold-light)}.review-card{border-top:2px solid var(--gold)}.review-card h3{color:var(--cream)}.contact-box{padding:42px 24px;text-align:center;background:linear-gradient(135deg,#251c13,#11100e);border:1px solid var(--line)}.contact-box h2{margin:0;font-size:clamp(2.3rem,8vw,4rem)}.contact-box p{max-width:560px;margin:14px auto 24px;color:var(--muted)}.contact-box .button-row{justify-content:center}.footer{padding:34px 0;background:#070706;border-top:1px solid var(--line)}.footer-grid{display:grid;gap:16px}.footer-brand{display:flex;align-items:center;gap:12px;font-family:Georgia,serif;font-size:1rem;font-weight:700;letter-spacing:.13em}.footer-brand img{width:64px;height:64px;object-fit:contain;border:1px solid var(--line)}.footer-brand b{color:var(--gold)}.footer p,.footer-note{margin:6px 0 0;color:var(--muted);font-size:.79rem}
+@media(min-width:640px){.nav-links a{padding:8px 12px}.hero{padding:115px 0 92px}.hero-grid{grid-template-columns:1fr 235px;gap:50px}.product-grid{grid-template-columns:repeat(2,1fr)}.info-grid,.payment-grid,.review-grid{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:1fr auto;align-items:end}}
+@media(min-width:920px){section{padding:92px 0}.product-grid{grid-template-columns:repeat(3,1fr)}.product-image{height:410px}.about-grid{grid-template-columns:.75fr 1fr;gap:90px}.featured .product-grid{grid-template-columns:repeat(3,1fr)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.product-card{transition:none}.button:hover,.product-card:hover{transform:none}}
 </style>
 </head>
 <body>
-<header class="site-header">
-  <div class="nav-shell">
-    <a class="brand" href="#top" aria-label="TBH Fashion home"><img class="brand-mark" src="tbh-fashion-logo.jpeg" alt="TBH Fashion logo"><span>TBH <b>FASHION</b></span></a>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="#shop">Shop</a>
-      <a href="#about">About</a>
-      <a href="#shopping-info">Delivery</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main id="top">
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Premium Pakistani Collection · Bangladesh</p>
-        <h1 id="hero-title">Elegance, chosen for your everyday moments.</h1>
-        <p class="hero-text">Discover beautifully detailed Pakistani 3-piece dresses selected for women who value graceful silhouettes, premium fabrics, and designs that feel special.</p>
-        <div class="button-row">
-          <a class="button button-primary" href="#shop">Explore Collection</a>
-          <!-- Replace 8801318222835 with your WhatsApp number, using country code and no + sign. -->
-          <a class="button button-outline" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20want%20to%20see%20your%20collection." target="_blank" rel="noopener">Order on WhatsApp</a>
-        </div>
-      </div>
+<header class="site-header"><div class="container nav">
+<a class="brand" href="#home" aria-label="TBH Fashion home"><img src="tbh-fashion-logo.jpeg" alt="TBH Fashion logo"><span>TBH <b>FASHION</b></span></a>
+<nav class="nav-links" aria-label="Primary navigation"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#delivery">Delivery</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid"><div>
+<p class="eyebrow">Premium Pakistani Collection · Bangladesh</p>
+<h1>Timeless elegance, styled for you.</h1>
+<p class="hero-text">Curated Pakistani 3-piece dresses for women who appreciate beautiful details, graceful colour, and effortless confidence.</p>
+<div class="button-row"><a class="button button-gold" href="#shop">Shop Collection</a><a class="button button-outline" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20want%20to%20see%20your%20collection." target="_blank" rel="noopener">Order on WhatsApp</a></div>
+</div><aside class="hero-seal"><img src="tbh-fashion-logo.jpeg" alt=""><p><strong>TBH Fashion</strong>Where timeless elegance meets modern style.</p></aside></div></section>
+<section class="featured"><div class="container"><div class="section-heading"><p class="eyebrow">Featured designs</p><h2 class="section-title">New arrivals</h2><p>Selected pieces, ready to make an impression.</p></div><div class="product-grid"><article class="product-card" data-price="6000">
+    <div class="product-image">
+      <span class="stock-badge">New arrival</span>
+      <img src="Coffee-Charcoal-1-%205000%20(1)%20L.webp" alt="Coffee Charcoal Pakistani premium three-piece dress" loading="lazy">
     </div>
-  </section>
-
-  <section id="shop" aria-labelledby="collection-title">
-    <div class="container">
-      <div class="section-heading">
-        <p class="eyebrow">Complete collection</p>
-        <h2 id="collection-title">The full collection</h2>
-        <p>Explore 15 elegant designs, each shown in full. Message us to confirm availability and your preferred size.</p>
-      </div>
-      <div class="products">
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="Coffee-Charcoal-1-%205000%20(1)%20L.webp" alt="Coffee Charcoal Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Coffee Charcoal</h3>
-            <p class="price">৳ 6,000</p>
-            <p class="product-details">Pakistani collection · Size: L</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Coffee%20Charcoal%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Coffee Charcoal on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="Deep-Wine-5000%20(2)%20L%20%26%20XL.webp" alt="Deep Wine Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Deep Wine</h3>
-            <p class="price">৳ 6,000</p>
-            <p class="product-details">Pakistani collection · Size: L &amp; XL</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Deep%20Wine%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Deep Wine on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="Rust-Ember-1-5000(2)%20L%20%26%20XL.webp" alt="Rust Ember Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Rust Ember</h3>
-            <p class="price">৳ 6,000</p>
-            <p class="product-details">Pakistani collection · Size: L &amp; XL</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Rust%20Ember%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Rust Ember on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="1004-Lime-Zest-2-6000(1)%20L.webp" alt="Lime Zest — Design 1004 Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Lime Zest — Design 1004</h3>
-            <p class="price">৳ 6,490</p>
-            <p class="product-details">Pakistani collection · Size: L</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Lime%20Zest%20%E2%80%94%20Design%201004%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Lime Zest — Design 1004 on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="1013-Crimson-Red-2-6000(1)%20L.webp" alt="Crimson Red — Design 1013 Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Crimson Red — Design 1013</h3>
-            <p class="price">৳ 6,490</p>
-            <p class="product-details">Pakistani collection · Size: L</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Crimson%20Red%20%E2%80%94%20Design%201013%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Crimson Red — Design 1013 on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="1015-Aqua-Marine-6000(1)%20L.webp" alt="Aqua Marine — Design 1015 Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Aqua Marine — Design 1015</h3>
-            <p class="price">৳ 6,490</p>
-            <p class="product-details">Pakistani collection · Size: L</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Aqua%20Marine%20%E2%80%94%20Design%201015%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Aqua Marine — Design 1015 on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="1015-Lavender-Bloom-6000(2)%20L%26XL.webp" alt="Lavender Bloom — Design 1015 Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Lavender Bloom — Design 1015</h3>
-            <p class="price">৳ 6,490</p>
-            <p class="product-details">Pakistani collection · Size: L &amp; XL</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Lavender%20Bloom%20%E2%80%94%20Design%201015%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Lavender Bloom — Design 1015 on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="6000%20sky%20blue%20%20(1)%20XL.webp" alt="Sky Blue Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Sky Blue</h3>
-            <p class="price">৳ 6,490</p>
-            <p class="product-details">Pakistani collection · Size: XL</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Sky%20Blue%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Sky Blue on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="6000(2)%20L%20%26%20XL.webp" alt="Blush Pink Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Blush Pink</h3>
-            <p class="price">৳ 6,490</p>
-            <p class="product-details">Pakistani collection · Size: L &amp; XL</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Blush%20Pink%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Blush Pink on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="lilac%206000%20(1)%20L.webp" alt="Lilac Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Lilac</h3>
-            <p class="price">৳ 6,490</p>
-            <p class="product-details">Pakistani collection · Size: L</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Lilac%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Lilac on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="Ice-Blue-6500%20(1)%20L.webp" alt="Ice Blue Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Ice Blue</h3>
-            <p class="price">৳ 6,650</p>
-            <p class="product-details">Pakistani collection · Size: L</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Ice%20Blue%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Ice Blue on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="Pearl-White-6500%20(1)%20XL.webp" alt="Pearl White Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Pearl White</h3>
-            <p class="price">৳ 6,650</p>
-            <p class="product-details">Pakistani collection · Size: XL</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Pearl%20White%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Pearl White on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="Rose-Mint-6500%20(1)%20L.webp" alt="Rose Mint Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Rose Mint</h3>
-            <p class="price">৳ 6,650</p>
-            <p class="product-details">Pakistani collection · Size: L</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Rose%20Mint%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Rose Mint on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="Sweet-Lavender-6500%20(2)%20L%20%26%20XL.webp" alt="Sweet Lavender Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>Sweet Lavender</h3>
-            <p class="price">৳ 6,650</p>
-            <p class="product-details">Pakistani collection · Size: L &amp; XL</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Sweet%20Lavender%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order Sweet Lavender on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-photo">
-            <span class="product-tag">In stock</span>
-            <img src="White-6500%20(1)%20L.webp" alt="White Pakistani premium three-piece dress" loading="lazy">
-          </div>
-          <div class="product-body">
-            <p class="product-kicker">Premium 3-piece</p>
-            <h3>White</h3>
-            <p class="price">৳ 6,650</p>
-            <p class="product-details">Pakistani collection · Size: L</p>
-            <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20White%20Premium%203-Piece%20Dress." target="_blank" rel="noopener" aria-label="Order White on WhatsApp">Order on WhatsApp</a>
-          </div>
-        </article>
-      </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Coffee Charcoal</h3>
+      <div class="price">৳ 6,000</div>
+      <p class="size">Available size: <strong>L</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Coffee%20Charcoal%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
     </div>
-  </section>
-
-  <section class="about" id="about" aria-labelledby="about-title">
-    <div class="container about-grid">
-      <div>
-        <p class="eyebrow">Our story</p>
-        <h2 id="about-title">Style that feels considered, never complicated.</h2>
-      </div>
-      <div class="about-copy">
-        <p>TBH Fashion brings premium Pakistani ladieswear to Bangladesh with a focus on thoughtful details, elegant colour palettes, and pieces you will reach for again.</p>
-        <p>We are growing with our customers, one carefully chosen dress at a time. Every order matters to us.</p>
-      </div>
+  </article>
+<article class="product-card" data-price="6000">
+    <div class="product-image">
+      <span class="stock-badge">New arrival</span>
+      <img src="Deep-Wine-5000%20(2)%20L%20%26%20XL.webp" alt="Deep Wine Pakistani premium three-piece dress" loading="lazy">
     </div>
-  </section>
-
-  <section id="shopping-info" aria-labelledby="info-title">
-    <div class="container">
-      <div class="section-heading">
-        <p class="eyebrow">Shop with confidence</p>
-        <h2 id="info-title">Simple shopping information</h2>
-        <p>Update these details with your delivery areas, measurements, and policy before launch.</p>
-      </div>
-      <div class="info-grid">
-        <article class="info-card">
-          <span class="info-number">01</span>
-          <h3>Delivery</h3>
-          <p>Delivery takes 4 to 5 working days. Add your delivery areas and charges here.</p>
-        </article>
-        <article class="info-card">
-          <span class="info-number">02</span>
-          <h3>Sizes</h3>
-          <p>Available sizes: S, M, L &amp; XL. Add detailed measurements here for easy ordering.</p>
-        </article>
-        <article class="info-card">
-          <span class="info-number">03</span>
-          <h3>Exchange &amp; returns</h3>
-          <p>Add your exchange or return policy here, including any condition and timeframe.</p>
-        </article>
-      </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Deep Wine</h3>
+      <div class="price">৳ 6,000</div>
+      <p class="size">Available size: <strong>L &amp; XL</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Deep%20Wine%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
     </div>
-  </section>
-
-  <section id="contact" aria-labelledby="contact-title">
-    <div class="container">
-      <div class="contact-panel">
-        <p class="eyebrow">Let’s find your perfect piece</p>
-        <h2 id="contact-title">Ready to order?</h2>
-        <p>Message TBH Fashion for availability, size guidance, and delivery details. We are happy to help.</p>
-        <div class="button-row">
-          <a class="button button-primary" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener">WhatsApp TBH Fashion</a>
-          <!-- Replace the social links below with your official account URLs. -->
-          <a class="button button-outline" href="https://www.facebook.com/share/19TkXiLmZK/" target="_blank" rel="noopener">Facebook</a>
-          <a class="button button-outline" href="https://www.instagram.com/tbh.fashion.official?stkn=MXR6Nm91NjR2N2RiMA==" target="_blank" rel="noopener">Instagram</a>
-        </div>
-      </div>
+  </article>
+<article class="product-card" data-price="6000">
+    <div class="product-image">
+      <span class="stock-badge">New arrival</span>
+      <img src="Rust-Ember-1-5000(2)%20L%20%26%20XL.webp" alt="Rust Ember Pakistani premium three-piece dress" loading="lazy">
     </div>
-  </section>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Rust Ember</h3>
+      <div class="price">৳ 6,000</div>
+      <p class="size">Available size: <strong>L &amp; XL</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Rust%20Ember%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article></div></div></section>
+<section id="shop"><div class="container"><div class="section-heading"><p class="eyebrow">Shop the collection</p><h2 class="section-title">Find your perfect piece</h2><p>Use the price filters to browse the current collection.</p></div>
+<div class="filters" aria-label="Filter products by price"><button class="filter-button active" type="button" data-filter="all">All designs</button><button class="filter-button" type="button" data-filter="6000">৳6,000</button><button class="filter-button" type="button" data-filter="6490">৳6,490</button><button class="filter-button" type="button" data-filter="6650">৳6,650</button></div>
+<div class="product-grid" id="products"><article class="product-card" data-price="6000">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="Coffee-Charcoal-1-%205000%20(1)%20L.webp" alt="Coffee Charcoal Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Coffee Charcoal</h3>
+      <div class="price">৳ 6,000</div>
+      <p class="size">Available size: <strong>L</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Coffee%20Charcoal%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6000">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="Deep-Wine-5000%20(2)%20L%20%26%20XL.webp" alt="Deep Wine Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Deep Wine</h3>
+      <div class="price">৳ 6,000</div>
+      <p class="size">Available size: <strong>L &amp; XL</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Deep%20Wine%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6000">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="Rust-Ember-1-5000(2)%20L%20%26%20XL.webp" alt="Rust Ember Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Rust Ember</h3>
+      <div class="price">৳ 6,000</div>
+      <p class="size">Available size: <strong>L &amp; XL</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Rust%20Ember%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6490">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="1004-Lime-Zest-2-6000(1)%20L.webp" alt="Lime Zest — Design 1004 Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Lime Zest — Design 1004</h3>
+      <div class="price">৳ 6,490</div>
+      <p class="size">Available size: <strong>L</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Lime%20Zest%20%E2%80%94%20Design%201004%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6490">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="1013-Crimson-Red-2-6000(1)%20L.webp" alt="Crimson Red — Design 1013 Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Crimson Red — Design 1013</h3>
+      <div class="price">৳ 6,490</div>
+      <p class="size">Available size: <strong>L</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Crimson%20Red%20%E2%80%94%20Design%201013%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6490">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="1015-Aqua-Marine-6000(1)%20L.webp" alt="Aqua Marine — Design 1015 Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Aqua Marine — Design 1015</h3>
+      <div class="price">৳ 6,490</div>
+      <p class="size">Available size: <strong>L</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Aqua%20Marine%20%E2%80%94%20Design%201015%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6490">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="1015-Lavender-Bloom-6000(2)%20L%26XL.webp" alt="Lavender Bloom — Design 1015 Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Lavender Bloom — Design 1015</h3>
+      <div class="price">৳ 6,490</div>
+      <p class="size">Available size: <strong>L &amp; XL</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Lavender%20Bloom%20%E2%80%94%20Design%201015%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6490">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="6000%20sky%20blue%20%20(1)%20XL.webp" alt="Sky Blue Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Sky Blue</h3>
+      <div class="price">৳ 6,490</div>
+      <p class="size">Available size: <strong>XL</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Sky%20Blue%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6490">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="6000(2)%20L%20%26%20XL.webp" alt="Blush Pink Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Blush Pink</h3>
+      <div class="price">৳ 6,490</div>
+      <p class="size">Available size: <strong>L &amp; XL</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Blush%20Pink%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6490">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="lilac%206000%20(1)%20L.webp" alt="Lilac Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Lilac</h3>
+      <div class="price">৳ 6,490</div>
+      <p class="size">Available size: <strong>L</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Lilac%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6650">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="Ice-Blue-6500%20(1)%20L.webp" alt="Ice Blue Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Ice Blue</h3>
+      <div class="price">৳ 6,650</div>
+      <p class="size">Available size: <strong>L</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Ice%20Blue%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6650">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="Pearl-White-6500%20(1)%20XL.webp" alt="Pearl White Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Pearl White</h3>
+      <div class="price">৳ 6,650</div>
+      <p class="size">Available size: <strong>XL</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Pearl%20White%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6650">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="Rose-Mint-6500%20(1)%20L.webp" alt="Rose Mint Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Rose Mint</h3>
+      <div class="price">৳ 6,650</div>
+      <p class="size">Available size: <strong>L</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Rose%20Mint%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6650">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="Sweet-Lavender-6500%20(2)%20L%20%26%20XL.webp" alt="Sweet Lavender Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>Sweet Lavender</h3>
+      <div class="price">৳ 6,650</div>
+      <p class="size">Available size: <strong>L &amp; XL</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20Sweet%20Lavender%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article>
+<article class="product-card" data-price="6650">
+    <div class="product-image">
+      <span class="stock-badge">In stock</span>
+      <img src="White-6500%20(1)%20L.webp" alt="White Pakistani premium three-piece dress" loading="lazy">
+    </div>
+    <div class="product-details">
+      <p class="product-type">Pakistani 3-piece</p>
+      <h3>White</h3>
+      <div class="price">৳ 6,650</div>
+      <p class="size">Available size: <strong>L</strong></p>
+      <a class="button button-gold order-link" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20am%20interested%20in%20the%20White%20Premium%203-Piece%20Dress." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+  </article></div></div></section>
+<section class="about" id="about"><div class="container about-grid"><img class="about-logo" src="tbh-fashion-logo.jpeg" alt="TBH Fashion logo"><div class="about-copy"><p class="eyebrow">About TBH Fashion</p><h2>Designed to make every moment feel special.</h2><p>TBH Fashion brings thoughtfully selected Pakistani ladieswear to Bangladesh. Our collection celebrates polished details, beautiful fabrics, and looks that feel confidently yours.</p><a class="button button-outline" href="#contact">Talk to us</a></div></div></section>
+<section id="delivery"><div class="container"><div class="section-heading"><p class="eyebrow">Shop with confidence</p><h2 class="section-title">Simple, clear service</h2></div><div class="info-grid"><article class="info-card"><span>01</span><h3>Delivery</h3><p>Delivery takes 4 to 5 working days. Add delivery areas and charges here.</p></article><article class="info-card"><span>02</span><h3>Size guide</h3><p>Available sizes include S, M, L, and XL. Check each product card for its current size availability.</p></article><article class="info-card"><span>03</span><h3>Exchange &amp; returns</h3><p>Add your exchange and return policy here, including conditions and timeframes.</p></article></div></div></section>
+<section class="payments"><div class="container"><div class="section-heading"><p class="eyebrow">Easy payment options</p><h2 class="section-title">Pay the way you prefer</h2><p>Replace the placeholders below with your payment details before taking orders.</p></div><div class="payment-grid"><article class="payment-card"><h3>bKash</h3><p>Add your bKash number and payment instructions here.</p></article><article class="payment-card"><h3>Nagad</h3><p>Add your Nagad number and payment instructions here.</p></article><article class="payment-card"><h3>Cash on Delivery</h3><p>Confirm your Cash on Delivery areas and conditions here.</p></article></div></div></section>
+<section><div class="container"><div class="section-heading"><p class="eyebrow">Customer love</p><h2 class="section-title">Your experience matters</h2><p>Customer stories will appear here as TBH Fashion grows.</p></div><div class="review-grid"><article class="review-card"><h3>Share your style</h3><p>Be among the first to share your TBH Fashion look and experience.</p></article><article class="review-card"><h3>Made with care</h3><p>Every order is handled with attention to detail from selection to delivery.</p></article><article class="review-card"><h3>Your feedback</h3><p>Message us after your order and let us know how we did.</p></article></div></div></section>
+<section id="contact"><div class="container"><div class="contact-box"><p class="eyebrow">Ready when you are</p><h2>Let’s find your next favourite outfit.</h2><p>Message TBH Fashion for availability, size guidance, and delivery details.</p><div class="button-row"><a class="button button-gold" href="https://wa.me/8801318222835?text=Hello%20TBH%20Fashion%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener">WhatsApp TBH Fashion</a><a class="button button-outline" href="https://www.facebook.com/share/19TkXiLmZK/" target="_blank" rel="noopener">Facebook</a><a class="button button-outline" href="https://www.instagram.com/tbh.fashion.official?stkn=MXR6Nm91NjR2N2RiMA==" target="_blank" rel="noopener">Instagram</a></div></div></div></section>
 </main>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="footer-brand"><img class="footer-logo" src="tbh-fashion-logo.jpeg" alt=""><span>TBH <b>FASHION</b></span></div>
-      <p>Premium Pakistani ladieswear, selected with care for Bangladesh.</p>
-    </div>
-    <div class="footer-note">© 2026 TBH Fashion · All rights reserved.</div>
-  </div>
-</footer>
-</body>
-</html>
+<footer class="footer"><div class="container footer-grid"><div><div class="footer-brand"><img src="tbh-fashion-logo.jpeg" alt=""><span>TBH <b>FASHION</b></span></div><p>Timeless elegance meets modern style.</p></div><div class="footer-note">© 2026 TBH Fashion · All rights reserved.</div></div></footer>
+<script>
+const filterButtons=document.querySelectorAll('.filter-button');
+const productCards=document.querySelectorAll('#products .product-card');
+filterButtons.forEach(button=>button.addEventListener('click',()=>{const filter=button.dataset.filter;filterButtons.forEach(item=>item.classList.toggle('active',item===button));productCards.forEach(card=>{card.hidden=filter!=='all'&&card.dataset.price!==filter})}));
+</script>
+</body></html>
